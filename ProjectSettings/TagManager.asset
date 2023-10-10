@@ -4,11 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - verticalWall
   - horizontalWall
-  - paddel left
   - paddelRight
   - paddelLeft
+  - verticalWallL
+  - verticalWallR
   layers:
   - Default
   - TransparentFX
