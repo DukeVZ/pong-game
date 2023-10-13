@@ -15,12 +15,13 @@ public class collision : MonoBehaviour
     public TMP_Text score;
     public int leftScore = 0;
     public int rightScore = 0;
-
+    public int winScore = 10;
     void resetBall()
     {
         xPosition = 0f;
-        yPosition = 0f;
+        yPosition = Random.Range(-4f,4f);
         xSpeed = xSpeed * -1f;
+
     }
 
 
@@ -38,6 +39,18 @@ public class collision : MonoBehaviour
         yPosition = yPosition + ySpeed * Time.deltaTime;
         transform.position = new Vector3(xPosition, yPosition, 0f);
 
+        if(leftScore >= 10) 
+        {
+            score.text = "left player wins";
+            xPosition = 0f;
+            yPosition = 0f;
+        }
+        else if (rightScore >= 10)
+        {
+            score.text = "right player wins";
+            xPosition = 0f;
+            yPosition = 0f;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -59,6 +72,10 @@ public class collision : MonoBehaviour
             resetBall();
             leftScore++;
             score.text = leftScore + "-" + rightScore;
+        }
+        else if (collision.gameObject.CompareTag("middalWall"))
+        {
+            xSpeed = xSpeed * -1f;
         }
 
 

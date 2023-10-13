@@ -11,7 +11,7 @@ public class paddel : MonoBehaviour
 
 
 
-    public float speed = 20f;
+    public float speed = 10f;
     public string leftOrRight;
     public float maxValue = 3.8f;
 
@@ -36,10 +36,10 @@ public class paddel : MonoBehaviour
         if (leftOrRight == "left")
         {
 
-          paddleControl(KeyCode.W, KeyCode.S);
+          paddleControl(KeyCode.UpArrow, KeyCode.DownArrow);
         }else if(leftOrRight == "right")
         {
-            paddleControl(KeyCode.UpArrow, KeyCode.DownArrow);
+            paddleControl(KeyCode.W, KeyCode.S);
         }
 
     }
