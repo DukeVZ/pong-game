@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Ball.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/main menu.unity
+    guid: 1259a8e14f5d031419bcaa527b2a382e
   - enabled: 1
     path: Assets/Scenes/paddel.unity
     guid: 75d30b9544187114396bab1f739f865d
+  - enabled: 1
+    path: Assets/Scenes/pong.unity
+    guid: 9718c3da902fb7a4784a226e647c198e
   m_configObjects: {}
