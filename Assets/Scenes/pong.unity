@@ -735,7 +735,7 @@ MonoBehaviour:
   yPosition: 2
   xSpeed: 2
   ySpeed: 2
-  score: {fileID: 0}
+  score: {fileID: 354346470}
   leftScore: 0
   rightScore: 0
   winScore: 10
